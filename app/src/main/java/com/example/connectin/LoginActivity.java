@@ -25,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.view_pager);
 
         //Creating Tabs
+
         tabLayout.addTab(tabLayout.newTab().setText("LOGIN"));
         tabLayout.addTab(tabLayout.newTab().setText("SIGN UP"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
@@ -52,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
         final LoginAdapter adapter = new LoginAdapter(getSupportFragmentManager(), this, tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        
+
         tabLayout.setTranslationY(300);
         tabLayout.setAlpha(v);
         tabLayout.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(100).start();
