@@ -92,7 +92,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="250dp"
                 android:fontFamily="cursive"
-                android:text="Android"
+                android:text="Connecting future Engineers"
                 android:textColor="#fff"
                 android:textSize="24sp" />
         </RelativeLayout>
