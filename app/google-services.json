@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "384192801108",
+    "firebase_url": "https://connectin-3275d.firebaseio.com",
+    "project_id": "connectin-3275d",
+    "storage_bucket": "connectin-3275d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384192801108:android:4ae30e1c7c77dd89c5c0c1",
+        "android_client_info": {
+          "package_name": "com.example.connectin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384192801108-ps6v6mvu55o1vsprr1p7dtfpffm0s669.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvA7VApR2VCNnYPTU6SWkz1WqUqnGXSwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384192801108-ps6v6mvu55o1vsprr1p7dtfpffm0s669.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

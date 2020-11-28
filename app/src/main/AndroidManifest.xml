@@ -10,11 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ConnectIn">
  
-        <activity android:name=".SignupTabFragment"></activity>
-        <activity android:name=".LoginTabFragment" />
+<!--        <activity android:name=".SignupTabFragment"></activity>-->
+<!--        <activity android:name=".LoginTabFragment" />-->
         <activity android:name=".LoginActivity" />
-        <activity android:name=".splashScreen" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
  
         <activity android:name=".splashScreen">
  
@@ -23,8 +22,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".MainActivity">
         </activity>
     </application>
 

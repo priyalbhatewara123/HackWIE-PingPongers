@@ -15,6 +15,11 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class SignupTabFragment extends Fragment {
 
     EditText enteremail;
@@ -48,7 +53,7 @@ public class SignupTabFragment extends Fragment {
 
         //if user has already registered
         if (firebaseAuth.getCurrentUser() != null) {
-            startActivity(new Intent(getActivity(), inside_activity.class));
+            startActivity(new Intent(getActivity(), MainActivity.class));
             getActivity().finish();
         }
 
@@ -89,7 +94,7 @@ public class SignupTabFragment extends Fragment {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(getActivity(), "User Created.", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getActivity(), inside_activity.class);
+                            Intent intent = new Intent(getActivity(), MainActivity.class);
                             startActivity(intent);
                             getActivity().finish();
 

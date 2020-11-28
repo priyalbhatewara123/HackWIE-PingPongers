@@ -2,7 +2,9 @@ package com.example.connectin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
@@ -49,6 +51,16 @@ public class splashScreen extends AppCompatActivity {
 
         a.setAnimation(middleAnimation);
         slogan.setAnimation(bottomAnimation);
+
+        //Intent after timeout of splash screen
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(splashScreen.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        },5*1000);
 
     }
 }
